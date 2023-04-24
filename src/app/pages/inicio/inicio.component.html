@@ -1,4 +1,15 @@
 <p>inicio works!</p>
 <h1>{{nombre + " " + apellido}}</h1>
 <app-loading [visible]="loadingVisible"></app-loading>
-<button (click)="visualizarLoading()">Ver Loading</button>
+
+<div class="grid">
+<div class="col-6"> 
+    <p-button (onClick)="visualizarLoading()" label="Ver loading"></p-button>
+</div>
+<div class="col-6"> 
+    
+<p-button (onClick)="irpaginatabla()" label="Ir Tabla" icon="pi pi-save" iconPos="right"></p-button>
+</div>
+
+</div>
+

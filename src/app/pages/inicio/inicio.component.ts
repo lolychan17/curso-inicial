@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-inicio',
@@ -10,12 +11,23 @@ nombre = 'Lorena';
 apellido = 'Morales';
 loadingVisible = false;
 
+constructor (private ruta: Router){
+
+
+}
+
 visualizarLoading(){
 this.loadingVisible = true;
 setTimeout(() => {
   this.loadingVisible = false;
 }, 2000);
 }
+
+irpaginatabla(){
+this.ruta.navigate(['tabla']);
+}
+
+
 }
 
 
